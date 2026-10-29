@@ -1,0 +1,16 @@
+{
+  "name": "blackwar",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "blackwar-db",
+      "database_id": "PUT_YOUR_DATABASE_ID_HERE"
+    }
+  ],
+  // یک کرون در روز: ریست روزانه (۰۰:۰۰ UTC). پلن رایگان حداکثر ۵ کرون دارد.
+  "triggers": { "crons": ["0 0 * * *"] }
+  // بعد از ساخت فرانت‌اند، این بخش را فعال کنید:
+  // ,"assets": { "directory": "./web/dist", "not_found_handling": "single-page-application" }
+}

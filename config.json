@@ -1,0 +1,1046 @@
+{
+  "_comment": "همه اعداد بالانس اینجاست. پول‌ها به میلیون دلار (usd_millions) مگر ذکر شده. اعداد نقطه شروع‌اند و بعد از سیزن تستی اصلاح می‌شوند.",
+  "season": {
+    "length_days": 14,
+    "tick_minutes": 10,
+    "reset_utc_hour": 0
+  },
+  "tiers": {
+    "god": {
+      "name": "GOD",
+      "capital": 4000,
+      "upkeep_mult": 1.3,
+      "legitimacy_loss_mult": 1.5
+    },
+    "atom": {
+      "name": "BOMB ATOM",
+      "capital": 3500,
+      "nuclear_allowed": true
+    },
+    "gold": {
+      "name": "POWER GOLD",
+      "capital": 3000
+    },
+    "iron": {
+      "name": "POWER IRON",
+      "capital": 2500
+    },
+    "stone": {
+      "name": "POWER STONE",
+      "capital": 2000,
+      "early_income_bonus": 0.2,
+      "early_days": 7,
+      "build_cost_mult": 0.9,
+      "defense_bonus": 0.1
+    }
+  },
+  "countries": [
+    {
+      "id": 1,
+      "code": "USA",
+      "name_fa": "آمریکا",
+      "tier": "god",
+      "resources": [
+        "oil",
+        "gas",
+        "agri",
+        "gold",
+        "iron",
+        "uranium",
+        "wood",
+        "fish"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 2,
+      "code": "CHN",
+      "name_fa": "چین",
+      "tier": "god",
+      "resources": [
+        "oil",
+        "agri",
+        "iron",
+        "gold",
+        "uranium",
+        "lithium",
+        "fish"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 3,
+      "code": "RUS",
+      "name_fa": "روسیه",
+      "tier": "god",
+      "resources": [
+        "oil",
+        "gas",
+        "agri",
+        "gold",
+        "iron",
+        "uranium",
+        "wood",
+        "fish"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 4,
+      "code": "FRA",
+      "name_fa": "فرانسه",
+      "tier": "atom",
+      "resources": [
+        "agri",
+        "iron",
+        "uranium",
+        "fish"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 5,
+      "code": "GBR",
+      "name_fa": "بریتانیا",
+      "tier": "atom",
+      "resources": [
+        "oil",
+        "agri",
+        "iron",
+        "fish"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 6,
+      "code": "IND",
+      "name_fa": "هند",
+      "tier": "atom",
+      "resources": [
+        "agri",
+        "iron",
+        "gold",
+        "lithium"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 7,
+      "code": "PAK",
+      "name_fa": "پاکستان",
+      "tier": "atom",
+      "resources": [
+        "agri",
+        "iron",
+        "uranium"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 8,
+      "code": "PRK",
+      "name_fa": "کره شمالی",
+      "tier": "atom",
+      "resources": [
+        "iron",
+        "uranium"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 9,
+      "code": "ISR",
+      "name_fa": "اسرائیل",
+      "tier": "atom",
+      "resources": [
+        "agri",
+        "iron",
+        "lithium"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 10,
+      "code": "DEU",
+      "name_fa": "آلمان",
+      "tier": "gold",
+      "resources": [
+        "iron",
+        "gold",
+        "agri"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 11,
+      "code": "ESP",
+      "name_fa": "اسپانیا",
+      "tier": "gold",
+      "resources": [
+        "agri",
+        "fish",
+        "gold"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 12,
+      "code": "ITA",
+      "name_fa": "ایتالیا",
+      "tier": "gold",
+      "resources": [
+        "agri",
+        "fish",
+        "iron"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 13,
+      "code": "AUS",
+      "name_fa": "استرالیا",
+      "tier": "iron",
+      "resources": [
+        "iron",
+        "gold",
+        "lithium",
+        "oil"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 14,
+      "code": "SAU",
+      "name_fa": "عربستان",
+      "tier": "iron",
+      "resources": [
+        "oil",
+        "gas"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 15,
+      "code": "IRN",
+      "name_fa": "ایران",
+      "tier": "iron",
+      "resources": [
+        "oil",
+        "gas",
+        "agri",
+        "uranium"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 16,
+      "code": "TUR",
+      "name_fa": "ترکیه",
+      "tier": "iron",
+      "resources": [
+        "agri",
+        "iron",
+        "gold",
+        "fish"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 17,
+      "code": "JPN",
+      "name_fa": "ژاپن",
+      "tier": "iron",
+      "resources": [
+        "iron",
+        "fish"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 18,
+      "code": "KOR",
+      "name_fa": "کره جنوبی",
+      "tier": "iron",
+      "resources": [
+        "iron",
+        "fish"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 19,
+      "code": "POL",
+      "name_fa": "لهستان",
+      "tier": "iron",
+      "resources": [
+        "iron",
+        "agri"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 20,
+      "code": "NLD",
+      "name_fa": "هلند",
+      "tier": "iron",
+      "resources": [
+        "agri",
+        "fish",
+        "greenhouse"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 21,
+      "code": "SWE",
+      "name_fa": "سوئد",
+      "tier": "iron",
+      "resources": [
+        "iron",
+        "wood",
+        "gold"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 22,
+      "code": "CHE",
+      "name_fa": "سوئیس",
+      "tier": "iron",
+      "resources": [
+        "gold",
+        "gems"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 23,
+      "code": "ZAF",
+      "name_fa": "آفریقای جنوبی",
+      "tier": "iron",
+      "resources": [
+        "gold",
+        "gems",
+        "iron"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 24,
+      "code": "NGA",
+      "name_fa": "نیجریه",
+      "tier": "iron",
+      "resources": [
+        "oil",
+        "gas",
+        "agri"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 25,
+      "code": "MEX",
+      "name_fa": "مکزیک",
+      "tier": "iron",
+      "resources": [
+        "oil",
+        "gold",
+        "agri"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 26,
+      "code": "CAN",
+      "name_fa": "کانادا",
+      "tier": "iron",
+      "resources": [
+        "oil",
+        "gas",
+        "wood",
+        "gold"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 27,
+      "code": "CUB",
+      "name_fa": "کوبا",
+      "tier": "iron",
+      "resources": [
+        "agri",
+        "fish"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 28,
+      "code": "VEN",
+      "name_fa": "ونزوئلا",
+      "tier": "iron",
+      "resources": [
+        "oil",
+        "gas",
+        "gold"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 29,
+      "code": "BRA",
+      "name_fa": "برزیل",
+      "tier": "iron",
+      "resources": [
+        "agri",
+        "wood",
+        "gold",
+        "iron"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 30,
+      "code": "ARG",
+      "name_fa": "آرژانتین",
+      "tier": "iron",
+      "resources": [
+        "agri",
+        "livestock",
+        "gold"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 31,
+      "code": "ARE",
+      "name_fa": "امارات",
+      "tier": "stone",
+      "resources": [
+        "oil",
+        "gas"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 32,
+      "code": "IRQ",
+      "name_fa": "عراق",
+      "tier": "stone",
+      "resources": [
+        "oil",
+        "gas",
+        "agri"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 33,
+      "code": "IDN",
+      "name_fa": "اندونزی",
+      "tier": "stone",
+      "resources": [
+        "agri",
+        "wood",
+        "fish",
+        "oil"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 34,
+      "code": "LBN",
+      "name_fa": "لبنان",
+      "tier": "stone",
+      "resources": [
+        "agri",
+        "fish"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 35,
+      "code": "UKR",
+      "name_fa": "اوکراین",
+      "tier": "stone",
+      "resources": [
+        "agri",
+        "iron"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 36,
+      "code": "GRC",
+      "name_fa": "یونان",
+      "tier": "stone",
+      "resources": [
+        "agri",
+        "fish"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 37,
+      "code": "PRT",
+      "name_fa": "پرتغال",
+      "tier": "stone",
+      "resources": [
+        "agri",
+        "fish"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 38,
+      "code": "BEL",
+      "name_fa": "بلژیک",
+      "tier": "stone",
+      "resources": [
+        "iron",
+        "agri"
+      ],
+      "low_resource_bonus": true
+    },
+    {
+      "id": 39,
+      "code": "EGY",
+      "name_fa": "مصر",
+      "tier": "stone",
+      "resources": [
+        "agri",
+        "oil",
+        "fish"
+      ],
+      "low_resource_bonus": false
+    },
+    {
+      "id": 40,
+      "code": "MAR",
+      "name_fa": "مراکش",
+      "tier": "stone",
+      "resources": [
+        "agri",
+        "gold",
+        "fish"
+      ],
+      "low_resource_bonus": false
+    }
+  ],
+  "economy": {
+    "resources": {
+      "oil": {
+        "emoji": "🛢",
+        "per_mine_day": 650,
+        "base_price": 18000,
+        "min": 12000,
+        "max": 26000,
+        "mine_cost": 100
+      },
+      "gas": {
+        "emoji": "🔥",
+        "per_mine_day": 1000,
+        "base_price": 10000,
+        "min": 7000,
+        "max": 14000,
+        "mine_cost": 100
+      },
+      "iron": {
+        "emoji": "⚙️",
+        "per_mine_day": 1800,
+        "base_price": 6000,
+        "min": 4000,
+        "max": 9000,
+        "mine_cost": 100
+      },
+      "gold": {
+        "emoji": "🥇",
+        "per_mine_day": 250,
+        "base_price": 40000,
+        "min": 28000,
+        "max": 55000,
+        "mine_cost": 100
+      },
+      "uranium": {
+        "emoji": "☢️",
+        "per_mine_day": 90,
+        "base_price": 120000,
+        "min": 80000,
+        "max": 170000,
+        "mine_cost": 100
+      },
+      "lithium": {
+        "emoji": "🔋",
+        "per_mine_day": 350,
+        "base_price": 30000,
+        "min": 20000,
+        "max": 42000,
+        "mine_cost": 100
+      },
+      "gems": {
+        "emoji": "💎",
+        "per_mine_day": 150,
+        "base_price": 80000,
+        "min": 55000,
+        "max": 110000,
+        "mine_cost": 100
+      },
+      "agri": {
+        "emoji": "🌾",
+        "per_mine_day": 3000,
+        "base_price": 3000,
+        "min": 2000,
+        "max": 4500,
+        "mine_cost": 100
+      },
+      "fish": {
+        "emoji": "🐟",
+        "per_mine_day": 2200,
+        "base_price": 4000,
+        "min": 2800,
+        "max": 5600,
+        "mine_cost": 100
+      },
+      "livestock": {
+        "emoji": "🥩",
+        "per_mine_day": 2000,
+        "base_price": 5000,
+        "min": 3500,
+        "max": 7000,
+        "mine_cost": 100
+      },
+      "wood": {
+        "emoji": "🌲",
+        "per_mine_day": 5000,
+        "base_price": 2000,
+        "min": 1400,
+        "max": 2800,
+        "mine_cost": 100
+      },
+      "greenhouse": {
+        "emoji": "🌷",
+        "per_mine_day": 2500,
+        "base_price": 4000,
+        "min": 2800,
+        "max": 5600,
+        "mine_cost": 100
+      }
+    },
+    "economic_buildings": {
+      "income_factory": {
+        "cost": 100,
+        "income_day": 10
+      },
+      "food_factory": {
+        "cost": 150,
+        "income_day": 15
+      },
+      "fish_factory": {
+        "cost": 140,
+        "income_day": 14
+      },
+      "wood_factory": {
+        "cost": 130,
+        "income_day": 13
+      },
+      "refinery": {
+        "cost": 180,
+        "income_day": 18
+      },
+      "steel_factory": {
+        "cost": 220,
+        "income_day": 22
+      },
+      "battery_factory": {
+        "cost": 280,
+        "income_day": 30
+      },
+      "jewelry_factory": {
+        "cost": 300,
+        "income_day": 33
+      },
+      "nuclear_center": {
+        "cost": 700,
+        "income_day": 80
+      },
+      "power_plant": {
+        "cost": 200,
+        "power_output": 100,
+        "gas_per_day": 300
+      }
+    },
+    "power_need_per_factory": 20,
+    "market": {
+      "fee": 0.05,
+      "npc_buy_mult": 0.7,
+      "npc_sell_mult": 1.3,
+      "daily_sell_cap": 0.3,
+      "price_drop_per_pct_sold": 0.01
+    },
+    "early_game": {
+      "build_cap_days": 3,
+      "build_cap_count": 5,
+      "extra_cost_mult_after": 1.15,
+      "military_spend_cap_first_days": 3,
+      "military_spend_cap": 0.4,
+      "locked_until_day": {
+        "carrier": 7,
+        "bomber": 7
+      }
+    },
+    "progressive_tax": {
+      "enabled": true,
+      "brackets": [
+        {
+          "above": 3000,
+          "rate": 0.01
+        },
+        {
+          "above": 6000,
+          "rate": 0.02
+        },
+        {
+          "above": 10000,
+          "rate": 0.03
+        }
+      ]
+    }
+  },
+  "military": {
+    "army_upkeep_daily": 0.015,
+    "units": {
+      "infantry": {
+        "branch": "ground",
+        "cost": 120,
+        "prod": 5,
+        "atk": 10,
+        "def": 12,
+        "hp": 100
+      },
+      "support": {
+        "branch": "ground",
+        "cost": 180,
+        "prod": 6,
+        "atk": 8,
+        "def": 18,
+        "hp": 120
+      },
+      "recon": {
+        "branch": "ground",
+        "cost": 150,
+        "prod": 5,
+        "atk": 6,
+        "def": 8,
+        "hp": 80
+      },
+      "light_armor": {
+        "branch": "ground",
+        "cost": 400,
+        "prod": 12,
+        "atk": 22,
+        "def": 25,
+        "hp": 200
+      },
+      "tank": {
+        "branch": "ground",
+        "cost": 750,
+        "prod": 20,
+        "atk": 35,
+        "def": 42,
+        "hp": 350
+      },
+      "artillery": {
+        "branch": "ground",
+        "cost": 500,
+        "prod": 12,
+        "atk": 30,
+        "def": 15,
+        "hp": 180
+      },
+      "anti_armor": {
+        "branch": "ground",
+        "cost": 350,
+        "prod": 8,
+        "atk": 25,
+        "def": 10,
+        "hp": 150
+      },
+      "f16": {
+        "branch": "air",
+        "cost": 650,
+        "prod": 18,
+        "atk": 38,
+        "def": 24,
+        "hp": 150
+      },
+      "air_superiority": {
+        "branch": "air",
+        "cost": 1100,
+        "prod": 28,
+        "atk": 55,
+        "def": 35,
+        "hp": 220
+      },
+      "bomber": {
+        "branch": "air",
+        "cost": 1400,
+        "prod": 35,
+        "atk": 70,
+        "def": 20,
+        "hp": 250
+      },
+      "recon_drone": {
+        "branch": "air",
+        "cost": 250,
+        "prod": 8,
+        "atk": 8,
+        "def": 10,
+        "hp": 70
+      },
+      "combat_drone": {
+        "branch": "air",
+        "cost": 550,
+        "prod": 15,
+        "atk": 30,
+        "def": 12,
+        "hp": 120
+      },
+      "transport_plane": {
+        "branch": "air",
+        "cost": 700,
+        "prod": 15,
+        "atk": 0,
+        "def": 15,
+        "hp": 180
+      },
+      "frigate": {
+        "branch": "naval",
+        "cost": 800,
+        "prod": 20,
+        "atk": 30,
+        "def": 38,
+        "hp": 300
+      },
+      "destroyer": {
+        "branch": "naval",
+        "cost": 1500,
+        "prod": 35,
+        "atk": 50,
+        "def": 55,
+        "hp": 500
+      },
+      "submarine": {
+        "branch": "naval",
+        "cost": 1800,
+        "prod": 35,
+        "atk": 60,
+        "def": 40,
+        "hp": 450
+      },
+      "carrier": {
+        "branch": "naval",
+        "cost": 4000,
+        "prod": 60,
+        "atk": 70,
+        "def": 80,
+        "hp": 900
+      },
+      "logistics_ship": {
+        "branch": "naval",
+        "cost": 600,
+        "prod": 12,
+        "atk": 0,
+        "def": 15,
+        "hp": 250
+      },
+      "point_defense": {
+        "branch": "strategic",
+        "cost": 500,
+        "prod": 12,
+        "atk": 12,
+        "def": 35,
+        "hp": 200
+      },
+      "interceptor": {
+        "branch": "strategic",
+        "cost": 600,
+        "prod": 15,
+        "atk": 20,
+        "def": 32,
+        "hp": 200
+      },
+      "electronic_warfare": {
+        "branch": "strategic",
+        "cost": 900,
+        "prod": 20,
+        "atk": 15,
+        "def": 35,
+        "hp": 200
+      },
+      "ballistic_missile": {
+        "branch": "strategic",
+        "cost": 900,
+        "prod": 20,
+        "atk": 65,
+        "def": 10,
+        "hp": 100,
+        "cap": 10
+      },
+      "recon_satellite": {
+        "branch": "strategic",
+        "cost": 1200,
+        "prod": 25,
+        "atk": 0,
+        "def": 5,
+        "hp": 50,
+        "cap": 3
+      }
+    },
+    "military_buildings": {
+      "general_equipment": {
+        "cost": 250,
+        "days": 2,
+        "capacity": 15
+      },
+      "ammunition": {
+        "cost": 300,
+        "days": 2,
+        "capacity": 20
+      },
+      "armor_factory": {
+        "cost": 450,
+        "days": 4,
+        "capacity": 25
+      },
+      "missile_factory": {
+        "cost": 700,
+        "days": 5,
+        "capacity": 35
+      },
+      "air_factory": {
+        "cost": 900,
+        "days": 6,
+        "capacity": 45
+      },
+      "shipyard": {
+        "cost": 1200,
+        "days": 7,
+        "capacity": 60
+      },
+      "drone_factory": {
+        "cost": 500,
+        "days": 4,
+        "capacity": 30
+      }
+    },
+    "defense_buildings": {
+      "defense_equipment": {
+        "cost": 200,
+        "days": 2,
+        "capacity": 15
+      },
+      "fortifications": {
+        "cost": 350,
+        "days": 3,
+        "capacity": 20
+      },
+      "mine_factory": {
+        "cost": 300,
+        "days": 2,
+        "capacity": 18
+      },
+      "radar": {
+        "cost": 500,
+        "days": 4,
+        "capacity": 25
+      },
+      "air_defense_factory": {
+        "cost": 800,
+        "days": 5,
+        "capacity": 35
+      },
+      "interceptor_factory": {
+        "cost": 1000,
+        "days": 6,
+        "capacity": 40
+      },
+      "ew_factory": {
+        "cost": 900,
+        "days": 6,
+        "capacity": 35
+      },
+      "special_shelter": {
+        "cost": 1500,
+        "days": 7,
+        "capacity": 50
+      }
+    },
+    "readiness": {
+      "ok": 1.0,
+      "no_supplies": 0.6
+    },
+    "defender_bonus": 1.25,
+    "counter": {
+      "tank_vs_infantry": 1.5,
+      "anti_armor_vs_tank": 1.5,
+      "air_defense_vs_air": 2.0,
+      "total_cap": 2.5
+    },
+    "logistics_blocked_mult": 0.5,
+    "max_attacks_per_target_per_day": 3,
+    "loot_cap_fraction": 0.1,
+    "weak_target_ratio": 0.5
+  },
+  "population": {
+    "start": 5000000,
+    "food_ton_per_1000_per_day": 1,
+    "growth_min_satisfaction": 50,
+    "strike_below": 30,
+    "riot_below": 10,
+    "worker_per_mine": 10
+  },
+  "politics": {
+    "election_interval_days": 7,
+    "legitimacy_start": 100,
+    "unprovoked_attack_penalty": 10,
+    "aggressor_below": 40,
+    "aggressor_bonus_vs": 1.25,
+    "legitimacy_regen_per_day": 2,
+    "nap_break_fine": 0.1,
+    "gov_types": [
+      "democracy",
+      "dictatorship"
+    ]
+  },
+  "protection": {
+    "peace_window_hours": 48,
+    "newbie_hours": 5,
+    "sleep_shield_hours": 8,
+    "sleep_income_penalty": 0.25,
+    "attack_lock_minutes": 30
+  },
+  "chokepoints": [
+    {
+      "id": "hormuz",
+      "owner": "IRN"
+    },
+    {
+      "id": "suez",
+      "owner": "EGY"
+    }
+  ],
+  "score": {
+    "mode": "growth_percent",
+    "weights": {
+      "economy": 0.4,
+      "military": 0.3,
+      "diplomacy": 0.2,
+      "satisfaction": 0.1
+    }
+  },
+  "disabled_features": [
+    "espionage",
+    "extortion",
+    "cyber_attack",
+    "assassination"
+  ]
+}
